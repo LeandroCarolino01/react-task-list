@@ -6,7 +6,7 @@ const Todos = ({todos,deleteTodo}) => {
             return (
                 <div className="collection-item" key={todo.id}>
                    <h5 className="red accent-1"> {todo.content} </h5>
-                    <i class="fas fa-trash-alt" onClick={() => {deleteTodo(todo.id)}}></i>
+                    <i className="fas fa-trash-alt" onClick={() => {deleteTodo(todo.id)}}></i>
                    
                 </div>
             )
@@ -14,6 +14,8 @@ const Todos = ({todos,deleteTodo}) => {
     ) : (
         <p className="center">You have no todo's  left</p>
     )
+    
+    
     return (
         <div className="todos collection">
             {todoList}
